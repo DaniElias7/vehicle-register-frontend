@@ -1,38 +1,109 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+/*Layout*/
+.layout-container {
+  margin: 0 2rem;
+}
+#no-cars-message {
   text-align: center;
+  font-size: 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Navbar*/
+nav {
+  margin-bottom: 1rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  letter-spacing: 2px;
+  background-color: rgb(240, 244, 247);
+}
+#all-vehicles-button {
+  margin-bottom: 0;
+  background-color: rgb(23, 34, 43);
+  color: #FFF;
+}
+button, #not-sold {
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+}
+#exhibit-for button {
+  background-color: rgb(247, 247, 247);
+}
+#exhibit-for button:hover {
+  background-color: rgb(85, 94, 108);
+  color: #FFF;
 }
 
-.App-link {
-  color: #61dafb;
+#select-filter {
+  width: 30%;
+}
+#select-filter select {
+  width: 7rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#add-button {
+  padding: 1rem;
+  background-color: rgb(0, 138, 237);
+  color: #FFF;
+  text-decoration: none;
+}
+.table-button {
+  margin: 0 .5rem;
+  padding: .2rem;
+  background-color: none;
+}
+.update-button {
+  color: rgb(0, 138, 237);
+}
+.delete-button {
+  width: 2rem;
+  color: red;
+}
+
+.card {
+  padding: 2rem;
+}
+
+/* Car Details */
+#car-details-container {
+  margin: 5% auto;
+  padding: 2rem;
+  width: 480px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#car-details-container div {
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: space-between  ;
+  font-weight: bold;
+}
+#edit-save-button {
+  margin: 0 40%;
+  border-radius: 6px;
+  background: rgb(0, 72, 255);
+  color: #FFF;
+}
+
+/* Filter screens */
+.maker-filter-container {
+  margin: auto;
+  width: 300px;
+}
+.maker {
+  margin-top: 1rem;
+  border-bottom: .1px solid rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }

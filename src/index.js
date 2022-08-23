@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {Toaster} from 'react-hot-toast';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { PostProvider } from './context/PostContext';
+
+import Layout from './components/Layout';
+import Vehicles from './components/vehicles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <PostProvider>
+        <Routes>
+              <Route path='/' element={<Layout />}/>
+              <Route path='/veiculos' element={<Vehicles/>}/>
+          </Routes>
+          <Toaster />
+      </PostProvider>
+        
+    </BrowserRouter>
   </React.StrictMode>
 );
 
