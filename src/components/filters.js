@@ -1,49 +1,5 @@
 import { usePosts } from "../context/PostContext";
 
-
-let data = [
-    {
-        _id: 1,
-        veiculo: 'moto', 
-        marca: 'fiat', 
-        ano: '1987',
-        color: 'blue',
-        vendido: false,
-        createdAt: new Date(2022, 8, 10),
-        updatedAt: new Date()
-    },
-    {
-        _id: 2,
-        veiculo: 'coche', 
-        marca: 'honda', 
-        ano: '2021',
-        color: 'green',
-        vendido: true,
-        createdAt: new Date(2022, 8, 15),
-        updatedAt: new Date()
-    },
-    {
-        _id: 3,
-        veiculo: 'camioneta', 
-        marca: 'hyundai', 
-        ano: '2017',
-        color: 'blue',
-        vendido: false,
-        createdAt: new Date(2022, 8, 18),
-        updatedAt: new Date()
-    },
-    {
-        _id: 4,
-        veiculo: 'tractor', 
-        marca: 'honda', 
-        ano: '2018',
-        color: 'green', // add to existing database
-        vendido: true,
-        createdAt: new Date(2022, 8, 2),
-        updatedAt: new Date()
-    } 
-]
-
 // TO DO => fabricante - last week - decade of manufacturing - not sold
 
 // Fabricante (filter)
@@ -74,55 +30,6 @@ export const filterByMaker = (datalist) => { // WORKING!
 
 // Last week (filter)  WORKING!!
 export const lastWeekFilter = (datalist) => datalist.filter(item => new Date(item.createdAt).getDate() >= new Date().getDate() - 7) ;
-
-// Bubble sort (order the less 1st)
-// const bubbleSort = (unorderedList) => { // Still NOT WORKING
-//     let stop = false; // [  [ 1990, [ ... ] ], [ 2000, [ ... ] ] ]
-//     // Repeat up to have every item in the right position
-//     while (!stop) {
-//         for (let item = 0, nextItem = 1; item < unorderedList.length; item++, nextItem++) {
-
-//             console.log(unorderedList[nextItem][0])
-
-//             let item1 = unorderedList[item][0];
-//             let item2 = unorderedList[nextItem][0]
-
-//             if (item1 > item2) {
-//                 unorderedList.splice(item)
-//                 unorderedList.splice(item)
-
-//                 unorderedList.splice(item, 0, item2)
-//                 unorderedList.splice(nextItem, 0, item1)
-//             }
-
-//         }
-            
-//         // Check if list is ordered
-//         let count = 0;
-//         for (x in unorderedList ) {
-
-//             for (let y in unorderedList ) {
-
-//                 if ( x < y && unorderedList[x][0] > unorderedList[y][0] ){
-//                     count += 1
-//                 }
-                    
-//             }
-                 
-//         }
-             
-
-//         if (count == 0) {
-//             stop = true
-//         }
-            
-//     }
-    
-//     let orderedList = unorderedList
-    
-            
-//     return orderedList
-// }    
 
 // Decade of manufactoring (filter)
 export const decadeOfManufacturingFilter = (datalist) => {
