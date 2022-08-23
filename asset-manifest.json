@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vehicles-app/static/css/main.659ec38f.css",
+    "main.js": "/vehicles-app/static/js/main.e8384422.js",
+    "static/js/787.25221a18.chunk.js": "/vehicles-app/static/js/787.25221a18.chunk.js",
+    "index.html": "/vehicles-app/index.html",
+    "main.659ec38f.css.map": "/vehicles-app/static/css/main.659ec38f.css.map",
+    "main.e8384422.js.map": "/vehicles-app/static/js/main.e8384422.js.map",
+    "787.25221a18.chunk.js.map": "/vehicles-app/static/js/787.25221a18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.659ec38f.css",
+    "static/js/main.e8384422.js"
+  ]
+}
