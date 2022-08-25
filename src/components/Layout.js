@@ -15,16 +15,16 @@ const Layout = () => {
     return (
         <div className='layout-container'>  
             <Nav />
-                {
-                    page == 'all-vehicles' ? <Vehicles /> : 
-                    page == 'maker' ? <MakersAndDecadesUI /> :
-                    page == 'last-week' ? <Vehicles /> :
-                    page == 'decade' ? <MakersAndDecadesUI /> : 
-                    page == 'not-sold' ? <Vehicles /> :
-                    page == 'register' ? <AddCarForm /> :
-                    page == 'update' ? <UpdateCar/>:
+            {
+                page == 'all-vehicles' ? <Vehicles /> : 
+                page == 'maker' ? <MakersAndDecadesUI /> :
+                page == 'last-week' ? <Vehicles /> :
+                page == 'decade' ? <MakersAndDecadesUI /> : 
+                page == 'not-sold' ? <Vehicles /> :
+                page == 'register' ? <AddCarForm /> :
+                page == 'update' ? <UpdateCar/>:
                     ''
-                }
+            }
         </div>
     )
 }

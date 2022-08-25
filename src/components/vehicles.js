@@ -35,7 +35,7 @@ const Vehicles = () => {
                 <header>
                     <h1>Veiculos</h1>
                 </header>
-                <div id='cars'>
+                { datalist.length == 0 ? <h1 id='no-cars-message'>Não temos carros registrados no momento</h1>: <div id='cars'>
                     <table className="table table-striped">
                     <thead className="thead-dark">
                         <tr>
@@ -50,7 +50,7 @@ const Vehicles = () => {
                     </thead>
                     <tbody>
                         {
-                            datalist.length == 0 ? <h1 id='no-cars-message'>Não temos carros registrados no momento</h1>:
+                            
                             datalist.map( car=> {
                                 return <tr key={car._id}>
                                     <td>{car.veiculo}</td>
@@ -70,7 +70,7 @@ const Vehicles = () => {
                         
                     </tbody>
                     </table>
-                </div>
+                </div>}
             </div>  
         </div>
     )

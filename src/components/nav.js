@@ -7,10 +7,10 @@ import { usePosts } from "../context/PostContext";
 
 const Nav = () => {
 
+
     const {setPage } = usePosts();
 
     const navClickHandler = text => setPage(text);
-
     return (
         <header>
             <nav>
@@ -29,3 +29,4 @@ const Nav = () => {
 }
 
 export default Nav;
+

@@ -17,7 +17,7 @@ root.render(
       <PostProvider>
         <Routes>
               <Route path='/' element={<Layout />}/>
-              <Route path='/veiculos' element={<Vehicles/>}/>
+              {/* <Route path='/veiculos' element={<Vehicles/>}/> */}
           </Routes>
           <Toaster />
       </PostProvider>
